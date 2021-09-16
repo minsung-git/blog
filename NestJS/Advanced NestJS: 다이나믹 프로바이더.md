@@ -30,7 +30,7 @@ bootstrap();
 ```
 ```AppMoulde```은 토큰 ```PORT```를 갖는 하나의 프로바이더로 이루어져 있습니다.
 
-- 우리는 ```NestFactory.createApplicationContext```를 호출하여 우리의 어플리케이션을 bootstrap 하빈다. (본 함수는 ```NestFactory.create```와 유사한 역할을 합니다, 다만 추가 기능으로 HTTP 인스턴스를 초기화까지를 제공합니다.)
+- 우리는 ```NestFactory.createApplicationContext```를 호출하여 우리의 어플리케이션을 bootstrap 합니다. (본 함수는 ```NestFactory.create```와 유사한 역할을 합니다, 다만 추가 기능으로 HTTP 인스턴스를 초기화까지를 제공합니다.)
 - 그 다음으로 우리는 ```app.get('PORT)```를 통해 프로바이더의 가지고 있는 값을 요청합니다. 이는 프로바이더에 정의한것과 같이  ```3000```을 리턴하게 됩니다. 
 
 이 정도면 충분합니다. 하지만 만약 여러분이 사용자에게 무엇을 제공해야할지 모호하거나 또는 어플리케이션의 Runtime중에 프로바이더를 사용해야 한다면 어떻게 할까요?
