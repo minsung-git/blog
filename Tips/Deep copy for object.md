@@ -1,6 +1,6 @@
-While copy data for primitive types copys data, object and array work differently. It just give it a reference pointer.
+While copy data for primitive types copying values, for object and array works differently. It just gives it a reference pointer.
 
-Let'see together.
+Let's see together.
 
 I create studentB by copying studentA.
 ```
@@ -24,7 +24,7 @@ Let's see what we going to see.
     name: "Jack"
 }
 ```
-As this document said earler, it was caused becasue stdentB is just looking(referencing) at the data studentA. So if you assign object or array to the variable. It doesn't copy data from origin. It only has a reference. So this behavior would make an unexpected result.
+As this document said earlier, it was caused because stdentB is just looking(referencing) at the data studentA. So if you assign an object or array to a variable. It doesn't copy data from origin. It only has a reference. So this behavior would make an unexpected result.
 
 So, if there is potential for copying and modifying data, you should use deep copy 1)create an object 2)then copy data using rest operator. Here is the way.
 ```
